@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# These are just my notes..
+
+while true; do
+  read -p "Do you wish to start the quiz?" yn
+  case $yn in
+    [Yy]* ) make install; break;;
+    [Nn]* ) exit;;
+    * ) echo "Please answer with: Yes or No.";;
+  esac
+done
